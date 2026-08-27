@@ -55,6 +55,7 @@
           "grievance-log/grievance-queues",
           "grievance-log/create-a-grievance",
           "grievance-log/view-and-filter",
+          "grievance-log/export-and-generate-reports",
           "grievance-log/work-a-grievance-case",
           "grievance-log/follow-up",
           "grievance-log/edit-original-submission",
@@ -93,8 +94,7 @@
         "pages": [
           "insights/assistant",
           "insights/patterns",
-          "insights/analytics",
-          "reports/generate-a-report"
+          "insights/analytics"
         ]
       },
       {
@@ -117,6 +117,12 @@
       }
     ]
   },
+  "redirects": [
+    {
+      "source": "/reports/generate-a-report",
+      "destination": "/grievance-log/export-and-generate-reports"
+    }
+  ],
   "navbar": {
     "links": [
       {
