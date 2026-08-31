@@ -17,11 +17,21 @@ Administrators configure approvals per facility:
 
 CareResolve does not allow approvals without a signer. Organization administrators can be selected because they have organization-wide access.
 
+## Who can submit and approve
+
+Anyone who can access an open, unlocked grievance can complete its resolution and submit it for approval. The submitter does not need to be an administrator, the assignee, or a required signer.
+
+Only a required signer captured on the pending approval request can select **Approve**. Administrator access by itself does not add the administrator as a signer. An administrator who is not a required signer can use the explicit bypass action after a request is pending.
+
+Overdue status does not change who can submit, approve, cancel, or bypass a resolution approval.
+
 ## Submit for approval
 
 When approvals are enabled, the case action says **Submit for approval** instead of **Resolve**.
 
-Complete the resolution fields, submit, and confirm. CareResolve snapshots the required signer list at that moment; later facility-setting changes affect only future requests.
+Complete the investigation summary, findings, actions taken, and Outcome date. For a non-anonymous grievance, also record at least one **Initiator notified** field. Then submit and confirm. CareResolve snapshots the required signer list at that moment; later facility-setting changes affect only future requests.
+
+If submission is unavailable, confirm that every required resolution field is complete and that the facility still has at least one active required signer.
 
 While approval is pending:
 
@@ -47,7 +57,7 @@ Use bypass intentionally: it completes the resolution without the outstanding si
 
 ## Cancel, edit, resubmit, or reopen
 
-The submitter, a configured signer, or an administrator can select **Cancel approval and edit**. Cancellation unlocks the open case and clears that request. A later submission creates a new signer snapshot, prepares a fresh compliance review when an F-tag is present, and requires every approval again.
+The submitter, any required signer on the pending request, or an administrator can select **Cancel approval and edit**. Cancellation unlocks the open case and clears that request. A later submission creates a new signer snapshot, prepares a fresh compliance review when an F-tag is present, and requires every approval again.
 
 Reopening a resolved grievance preserves its history and original due date but clears approval state from the active workflow. If approvals are still enabled, the new resolution must be submitted again under the current facility settings.
 
