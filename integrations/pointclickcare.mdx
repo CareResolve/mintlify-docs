@@ -1,0 +1,83 @@
+---
+title: "PointClickCare"
+description: "Select synced residents, review their care context, and understand how PointClickCare information stays current."
+---
+
+The PointClickCare integration lets your team link a resident to a grievance and review available resident information without leaving the case.
+
+<Note>
+  These features apply only when PointClickCare is enabled for your organization and the facility is linked. Contact your CareResolve account team to arrange setup. Facilities without a connection continue to use manual resident entry.
+</Note>
+
+## Connect a facility
+
+Your authorized PointClickCare administrator activates CareResolve for the appropriate facilities in PointClickCare. The CareResolve team then confirms the organization and facility mappings and starts the initial resident and location sync.
+
+An activation does not automatically link every facility. Each mapping is reviewed so resident information appears in the correct CareResolve facility. Setup is coordinated with CareResolve, not through the product app's facility settings.
+
+## Select a resident during intake
+
+In **New grievance**, choose the facility, then use **PointClickCare resident** to search by name, room, or unit. Selecting a resident fills their name and displays their synced unit and room.
+
+If the resident is missing, select **Resident not listed** and enter the known details manually. Switching to manual entry clears the selected resident and its fields, so review the details before saving. Resident details can also be left blank when the concern does not identify a resident.
+
+The same controls are available when [editing an unlocked internal intake record](/grievance-log/edit-original-submission). Resident Council submissions do not link an individual resident.
+
+## Review resident details
+
+On a linked grievance, select the **Resident** card in the right rail to open the PointClickCare side sheet. The header shows the resident's name, unit, and room. Tabs appear only when that category has available records.
+
+| Tab | Information shown when available |
+| --- | --- |
+| Allergies | Allergen, reaction, severity, status, and onset date |
+| Care plans | Focus areas, goals, target dates, and interventions with instructions or frequency |
+| Nutrition | Diet, texture, fluid consistency, directions, and order dates |
+| Supplements | Nutritional supplements, schedules, directions, and order dates |
+| Medications | Medication, strength, status, start date, and directions |
+| Conditions | Active conditions, primary diagnosis indicator, status, and onset date |
+| Assessments | Completed assessments, type, reference date, status, and score |
+| Contacts | Resident contacts, relationships, contact types, and available phone or email details |
+
+A missing tab does not prove that a resident has no records of that kind. The facility's data, granted API access, and refresh availability determine what can be shown. Contacts are resident contacts, not a facility staff directory; reporter and involved-employee entry remain separate.
+
+This information is read-only in CareResolve. Correct clinical records in PointClickCare. CareResolve does not write grievance notes, resolutions, or clinical changes back to PointClickCare.
+
+## How information stays current
+
+CareResolve keeps saved resident information so opening a case does not require reloading every category from PointClickCare each time. Missing context is retrieved when first needed.
+
+- **Resident details and supported context:** PointClickCare change notifications, called webhooks, trigger updates to the affected resident or category. This includes conditions, allergies, medications, contacts, nutrition orders, and supplements.
+- **Care plans and general assessments:** opening the resident side sheet requests an update while keeping previously saved information visible.
+- **Manual refresh:** the refresh icon at the top-right of the side sheet requests all resident-context categories again. It does not refresh the facility's resident directory or location list.
+- **Facilities and locations:** the CareResolve team can run **Sync now** after a facility or location change, or to recover missed resident updates. This is separate from the resident sheet's refresh action.
+
+Updates can take time to arrive or finish. If a refresh fails, previously saved information is kept and the sheet shows a warning. The **Loaded** time indicates when the saved context was read for display, not that every category was freshly retrieved from PointClickCare at that moment.
+
+Clinical dates use the PointClickCare facility's timezone, shown in the sheet. If it is unavailable, dates use explicitly labeled UTC. Date-only values do not shift with the viewer's timezone.
+
+## Link a public submission
+
+On an unlocked public grievance, the Resident card may suggest a PointClickCare match using the submitted name and location. Review the full name, unit, and room before selecting **Link resident**. If multiple candidates appear, choose the correct resident first. Suggestions can accommodate some spelling differences, but never link automatically.
+
+The linked card shows the resident's synced identity and gives access to their context. The original public intake record remains unchanged, including the name and location the submitter entered.
+
+To undo a public-submission link, open the resident side sheet, open its three-dot **Resident actions** menu, and select **Remove PointClickCare link**. This removes the association, not the grievance or the PointClickCare record. For an internal grievance, change the selection or use **Resident not listed** in its unlocked intake record instead.
+
+## AI analysis and history
+
+The advisory AI analysis can use the linked resident's available context alongside the grievance. Linking, changing, or removing a resident triggers fresh analysis; changed saved context can also trigger reanalysis of linked grievances. Removing a link excludes that resident's context from the new analysis.
+
+Review suggestions against the actual report and records. A care plan or order describes documented care, not proof that it was delivered. AI does not change clinical records or resolve a grievance on its own.
+
+Grievances retain their recorded resident name and location independently of later syncs. The linked Resident card can therefore show newer information than the intake record. Correcting an internal intake record is a separate, recorded edit; public intake remains read-only.
+
+If a resident becomes inactive after discharge, or the facility connection is disabled, existing grievances and intake history are not deleted. Current clinical context is no longer provided for that inactive connection, and it is excluded from subsequent AI analysis.
+
+## If something is missing
+
+- **No resident selector:** confirm the grievance's facility with your administrator, then ask the CareResolve team whether that facility is connected.
+- **Resident missing from search:** check the name, room, and unit. Use **Resident not listed** to continue, and ask the CareResolve team to check the directory sync if needed.
+- **Missing or outdated context:** open the sheet and use refresh once. If a warning persists, contact support rather than repeatedly refreshing. Previously saved data may still be displayed.
+- **Location is read-only:** PointClickCare-managed locations must be corrected at the source and synchronized. Administrators can still manage custom CareResolve locations in [Facilities](/getting-started/facilities#locations).
+
+For help, contact [support@careresolve.ai](mailto:support@careresolve.ai). Keep resident details in your approved CareResolve workflow rather than copying them into an ordinary support email.

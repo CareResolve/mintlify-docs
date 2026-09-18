@@ -42,6 +42,12 @@ AI does not:
 
 When underlying case content changes, CareResolve may refresh the current AI analysis. The page shows the current suggestion set; use the case timeline for the actual record of what staff changed and when.
 
+## PointClickCare context
+
+When a current PointClickCare resident is linked, analysis can use their available saved resident context, including allergies, care plans, nutrition orders, and other supported categories. This can help staff interpret the concern, but it is not a diagnosis or proof that documented care was delivered.
+
+Linking, changing, or removing the resident triggers fresh analysis. Updates to saved resident context can also trigger reanalysis; removing the link excludes that context from the new analysis. Data may be unavailable or awaiting refresh, so do not assume the AI has a complete clinical record. See [how PointClickCare information stays current](/integrations/pointclickcare#how-information-stays-current).
+
 ## Good review practice
 
 Use the AI output as a starting point. Confirm it against the actual grievance record, attachments, case notes, and facility context before relying on it in review or reporting.
