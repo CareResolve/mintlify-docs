@@ -34,7 +34,7 @@ Each facility has four tabs: **Details**, **Locations**, **Departments**, and **
 | Tab | What it contains | Who can change it |
 | --- | --- | --- |
 | Details | Facility facts, resolution approvals, and public intake | Admins configure approvals; the facility profile is read-only |
-| Locations | Units, rooms, and areas | Admins |
+| Locations | Units, rooms, and areas | Admins manage custom locations; PointClickCare locations are read-only |
 | Departments | Routing groups and assigned members | Admins |
 | Configuration | Default grievance SLA | Admins |
 
@@ -66,7 +66,7 @@ The **Public intake** panel shows the permanent intake URL, QR code, last-used t
 
 Locations are reference data for units, rooms, common areas, and other facility locations. They populate intake fields while each grievance keeps its own point-in-time resident room and unit values.
 
-Administrators can:
+Administrators can manage custom CareResolve locations:
 
 - Create a unit, room, or standalone area.
 - Search and rename locations.
@@ -74,6 +74,8 @@ Administrators can:
 - Bulk create, move, or delete locations.
 
 Review changes carefully when staff rely on these names for consistent intake.
+
+For a linked facility, PointClickCare locations appear in the same list and are labeled **PointClickCare**. They are read-only in CareResolve; correct them in PointClickCare and ask the CareResolve team to synchronize the location directory. Custom locations remain editable alongside them. See [PointClickCare setup and synchronization](/integrations/pointclickcare).
 
 ### Departments
 
