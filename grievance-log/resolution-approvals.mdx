@@ -27,9 +27,9 @@ Overdue status does not change who can submit, approve, cancel, or bypass a reso
 
 ## Submit for approval
 
-When approvals are enabled, the case action says **Submit for approval** instead of **Resolve**.
+When approvals are enabled, the final action in the resolution dialog is **Submit for approval**.
 
-Complete the investigation summary, findings, actions taken, and Outcome date. For a non-anonymous grievance, also record at least one **Initiator notified** field. Then submit and confirm. CareResolve snapshots the required signer list at that moment; later facility-setting changes affect only future requests.
+Select **Resolve grievance** on the open grievance to open the resolution dialog. Complete the investigation summary, findings, actions taken, and Outcome date. For a non-anonymous grievance, also record at least one **Initiator notified** field. Then submit and confirm. CareResolve snapshots the required signer list at that moment; later facility-setting changes affect only future requests.
 
 If submission is unavailable, confirm that every required resolution field is complete and that the facility still has at least one active required signer.
 
@@ -55,12 +55,14 @@ An administrator may select **Bypass remaining approvals** for an exception. Dep
 
 Use bypass intentionally: it completes the resolution without the outstanding signatures.
 
-## Cancel, edit, resubmit, or reopen
+## Request changes, cancel, resubmit, or reopen
 
-The submitter, any required signer on the pending request, or an administrator can select **Cancel approval and edit**. Cancellation unlocks the open case and clears that request. A later submission creates a new signer snapshot, prepares a fresh compliance review when an F-tag is present, and requires every approval again.
+A required signer or administrator reviewing someone else's Resolution can select **Request changes** and describe what needs to change. The note is required and appears on the case timeline. The Resolution returns to editing and needs a fresh approval cycle.
+
+The person who submitted the request sees **Cancel approval and edit** instead and can pull it back without a note. Either action unlocks the open case and clears that request. A later submission creates a new signer snapshot, prepares a fresh compliance review when an F-tag is present, and requires every approval again.
 
 Reopening a resolved grievance preserves its history and original due date but clears approval state from the active workflow. If approvals are still enabled, the new resolution must be submitted again under the current facility settings.
 
-Required signers see cases awaiting their approval in **My queue**, even when they are not the assignee. The grievance log also provides a **Pending Approval** filter.
+Required signers see cases awaiting their approval under **Pending my approval** in the sidebar and in **My queue**, even when they are not the assignee. The grievance itself shows a banner when its resolution is pending your approval. The grievance log also provides a **Pending Approval** filter.
 
 After finalization, an administrator or configured facility Resolution approver can correct a Resolution in place when its compliance review identifies gaps. **Update Resolution** preserves resolved status and completed approvals while recording the changes and rerunning the review.

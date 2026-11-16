@@ -22,20 +22,19 @@ Facilities are used throughout CareResolve for:
 - Grievance routing and visibility
 - Dashboard and analytics scope
 - CSV exports and PDF reports
-- Public intake links
+- Public intake links and the concern line
 - Team access
-- Locations and departments
+- Locations
 - Patterns
 
 ## Facility tabs
 
-Each facility has four tabs: **Details**, **Locations**, **Departments**, and **Configuration**.
+Each facility has three tabs: **Details**, **Locations**, and **Configuration**.
 
 | Tab | What it contains | Who can change it |
 | --- | --- | --- |
 | Details | Facility facts, resolution approvals, and public intake | Admins configure approvals; the facility profile is read-only |
-| Locations | Units, rooms, and areas | Admins |
-| Departments | Routing groups and assigned members | Admins |
+| Locations | Units, rooms, and areas | Admins manage custom locations; PointClickCare locations are read-only |
 | Configuration | Default grievance SLA | Admins |
 
 Members can review these tabs for facilities they can access.
@@ -56,17 +55,17 @@ Only people with access to the facility can be selected. Organization admins are
   Approvals cannot be enabled without at least one required signer. If approvals are off, the facility uses direct resolution.
 </Note>
 
-The **Public intake** panel shows the permanent intake URL, QR code, last-used time, and download actions. Users with access to the facility can copy the URL or download a poster or QR PNG.
+The **Public intake** panel shows the permanent intake URL, QR code, and download actions. Users with access to the facility can copy the URL or download a poster or QR PNG. When your organization has a concern line, its phone number appears in the same panel and on the downloadable poster.
 
 <Card title="Resolution approvals" icon="shield-check" href="/grievance-log/resolution-approvals">
-  Review the approval workflow, including self-approval, admin bypass, cancellation, and reopening.
+  Review the approval workflow, including self-approval, admin bypass, requested changes, and reopening.
 </Card>
 
 ### Locations
 
 Locations are reference data for units, rooms, common areas, and other facility locations. They populate intake fields while each grievance keeps its own point-in-time resident room and unit values.
 
-Administrators can:
+Administrators can manage custom CareResolve locations:
 
 - Create a unit, room, or standalone area.
 - Search and rename locations.
@@ -75,11 +74,7 @@ Administrators can:
 
 Review changes carefully when staff rely on these names for consistent intake.
 
-### Departments
-
-Departments are facility-specific routing groups such as Nursing, Dietary, Maintenance, Social Services, or Administration.
-
-Administrators can create departments and assign members. A member must already have access to the facility before being assigned to one of its departments. Department membership can affect intake routing and notifications.
+For a facility connected to PointClickCare, synced locations appear in the same list and are labeled **PointClickCare**. They are read-only in CareResolve; correct them in PointClickCare. Custom locations remain editable alongside them. See [PointClickCare](/integrations/pointclickcare).
 
 ### Configuration
 
