@@ -5,7 +5,7 @@ description: "Find open or resolved grievances by status, label, assignee, date,
 
 Use the grievance list to work open cases, find older records, and prepare for leadership or survey review.
 
-Use the app-wide facility switcher first when you need to change facility scope. Then use the list filters to narrow the results.
+Use the facility switcher at the top of the sidebar first when you need to change facility scope. Then use the list filters to narrow the results.
 
 <Frame caption="The grievance log combines facility scope, filters, status signals, and sortable columns.">
   <img src="/images/grievance-log.webp" alt="Filtered CareResolve grievance log for a fictional facility" />
@@ -21,7 +21,7 @@ For top bar search, recently viewed grievances, result previews, and search-side
 
 ## Filter the list
 
-Available filters in open mode include:
+Select **Filter** above the list. Available filters in open mode include:
 
 - **Date range** over the received date.
 - **Status**: Pending Approval, Overdue, or High Priority. Open is the default list mode.
@@ -34,11 +34,14 @@ In resolved mode, the **Status** filter includes High Priority plus the advisory
 
 Select **Reset filters** to clear page filters without changing a scoped queue such as My queue.
 
+Use **Views** to save the current filters as a named view and return to it later. Saved views are kept in your browser on the current device.
+
 ## Read list signals
 
-The title column can show:
+Each row shows the title with the grievance number, facility, and resident location beneath it. The row can also show:
 
-- A QR badge for a public submission.
+- A QR badge for a public form submission, or a phone marker for a concern-line call.
+- A PointClickCare marker beside a resident selected from the synced directory.
 - A paperclip and count when attachments are present.
 - High Priority, Overdue, and Pending Approval markers.
 
@@ -54,7 +57,7 @@ List search stays inside your facility access and the current open or resolved m
 
 Open grievances default to **Created**, newest first. Resolved grievances default to **Resolved**, newest finalization first.
 
-Select **ID**, **Received**, **Due** or **Resolved** as appropriate for the current mode, or **Created** to change the sort column or direction.
+Select the **Grievance**, **Due** or **Resolved** (depending on the current mode), or **Created** column header to change the sort column or direction.
 
 Sorting changes order only; it does not change which records match.
 
@@ -62,8 +65,8 @@ Sorting changes order only; it does not change which records match.
 
 Select a row to open the complete case record.
 
-Use row checkboxes to export selected grievances as CSV or generate PDF report documents. Selected actions apply to the chosen records even when the table is paginated.
+Use row checkboxes to act on several grievances at once. **Assign _N_** assigns the selected grievances to one person or clears their assignee; resolved grievances, ones pending approval, and ones in a facility the assignee cannot work are skipped. **Export _N_** downloads the selection as a CSV or a full-detail PDF. Selected actions apply to the chosen records even when the table is paginated.
 
 <Card title="Export data and generate reports" icon="file-down" href="/grievance-log/export-and-generate-reports">
-  Export matching or selected grievances as CSV, or generate a Summary or Full internal report as PDF.
+  Export matching or selected grievances as CSV, or generate a full-detail PDF report.
 </Card>

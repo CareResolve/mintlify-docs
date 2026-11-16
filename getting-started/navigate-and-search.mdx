@@ -1,31 +1,37 @@
 ---
 title: "Navigate and search"
-description: "Use the sidebar, top bar, facility scope, search, notifications, and account menu."
+description: "Use the sidebar, top bar, facility scope, search, Assistant, notifications, and account menu."
 ---
 
-The sidebar moves you between work areas. The top bar keeps common actions available everywhere.
+The sidebar moves you between work areas and sets the facility scope. The top bar keeps search, **Create**, Assistant, notifications, and your account available everywhere.
 
-<Frame caption="The dashboard with primary navigation, global search, facility scope, notifications, and account controls.">
-  <img src="/images/dashboard-overview.webp" alt="CareResolve dashboard showing the sidebar and top navigation" />
+<Frame caption="The dashboard with the sidebar, facility switcher, global search, Create, Assistant, notifications, and account controls.">
+  <img src="/images/dashboard-overview.webp" alt="CareResolve dashboard showing the sidebar and top bar" />
 </Frame>
 
 ## Move around
 
-Use the sidebar for the Dashboard, grievance queues, Meetings, Insights, Team, and Facilities. What appears depends on your role.
+The sidebar is grouped into three sections:
+
+- **Inbox:** Dashboard, All grievances, My queue, Overdue, High Priority, and Resident Council. **Pending my approval** also appears here when a resolution is waiting for your sign-off.
+- **Insights:** Patterns and Analytics.
+- **Organization:** Team and Facilities.
+
+What appears depends on your role. Counts beside the queues respect your role and facility scope.
 
 Use the top bar to:
 
 - Search grievances.
 - Open the **New grievance** composer from **Create**.
-- Change facility scope.
-- Review notifications or open help.
+- Open **Assistant** in a side panel.
+- Review notifications.
 - Manage your account from your avatar.
 
-On smaller screens, the navigation and search controls collapse into icons.
+On phones and small tablets, the sidebar collapses into a menu. Open it to reach navigation, the facility switcher, **New grievance**, help, and your account.
 
 ## Change facility scope
 
-The facility switcher changes the scope for dashboard metrics, grievance lists, search defaults, contextual exports, and setup screens.
+The facility switcher sits at the top of the sidebar. It changes the scope for dashboard metrics, grievance lists, queue counts, search defaults, and contextual exports.
 
 Administrators can work across the organization or select one facility. Members see only facilities they can access. If a record seems missing, check facility scope before changing filters.
 
@@ -41,7 +47,7 @@ On wider screens, filter results by received date, facility, assignee, status, c
 
 ## Search meetings
 
-Open **Meetings** and select its search action to search meeting titles and notes. Use the meeting-page facility selector to narrow the results, then open a result on its full page.
+Open **Resident Council** and select its search action to search meeting titles and notes. Use the meeting-page facility selector to narrow the results, then open a result on its full page.
 
 Meeting search is separate from the top-bar grievance search.
 
@@ -51,11 +57,14 @@ Select your avatar to open **Account settings**, switch workspaces when you belo
 
 The notification bell shows recent activity, unread state, and links back to the related record. Use its action menu to mark all notifications read or open notification preferences.
 
-The help menu links to support, feedback, bug reporting, and these docs. Do not include resident names, room numbers, narratives, attachments, or other PHI in a support message unless your organization has approved that sharing path.
+The help menu is at the bottom of the sidebar. It offers **Contact support**, **Give feedback**, **Report a bug**, and **View docs**. Support, feedback, and bug forms ask you to confirm that your message contains no PHI: describe the problem without resident names, room numbers, narratives, or attachments.
 
 <CardGroup cols={2}>
   <Card title="View and filter grievances" icon="list-filter" href="/grievance-log/view-and-filter">
-    Narrow the grievance log, export CSV data, or prepare PDF reports.
+    Narrow the grievance log, assign in bulk, export CSV data, or prepare PDF reports.
+  </Card>
+  <Card title="Assistant" icon="messages-square" href="/insights/assistant">
+    Ask about the page you are on and review proposed changes.
   </Card>
   <Card title="Account and appearance" icon="circle-user-round" href="/settings/account-and-appearance">
     Manage personal settings and workspace switching.

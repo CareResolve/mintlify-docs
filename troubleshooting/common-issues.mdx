@@ -19,13 +19,13 @@ If you are an admin, confirm the facility is active and that you are in the corr
 
 Check filters, date range, status, and facility selection. Resolved records may be hidden depending on your current filters.
 
-Also check whether you are in **All grievances**, **My queue**, **Overdue**, or **High Priority**. Those sidebar items apply different filters.
+Also check whether you are in **All grievances**, **My queue**, **Pending my approval**, **Overdue**, or **High Priority**. Those sidebar items apply different filters.
 
 If you are using top bar search, confirm the facility switcher is set to the right scope and clear search-side filters such as received date, assignee, status, category, F-tag, and **Other**.
 
 ## I cannot find or link a meeting
 
-Open **Meetings**, confirm the facility selector, and use meeting search to match the title or notes. Members only see meetings in assigned facilities.
+Open **Resident Council**, confirm the facility selector, and use meeting search to match the title or notes. Members only see meetings in assigned facilities.
 
 A Resident Council grievance can link only to a meeting from the same facility. Confirm the grievance facility first, then retry **Link meeting** from the new-grievance composer or unlocked internal intake record.
 
@@ -37,9 +37,16 @@ Only administrators can delete meetings. A meeting with source-linked grievances
 
 ## I cannot resolve a grievance
 
-Confirm that you can access the grievance and that it has enough follow-up to support the resolution.
+First check the action shown on the open grievance:
 
-Also confirm the grievance is open and not locked while waiting for approval. A required signer can approve a pending resolution; an administrator can cancel the request to unlock the case.
+- **Resolve** means the facility does not require resolution approvals.
+- **Submit for approval** means approvals are enabled. Any user with access to the grievance can submit after the required resolution fields are complete.
+- **Approve** appears only for a required signer on the pending request. Being an administrator does not automatically make you a signer.
+- An administrator who is not a required signer can use the explicit bypass action on a pending request. Depending on the administrator's signer status, the confirmation action is **Approve + bypass** or **Resolve**.
+
+If **Submit for approval** is blocked, complete the investigation summary, findings, actions taken, and Outcome date. For a non-anonymous grievance, also record at least one **Initiator notified** field. An administrator should also confirm that at least one active required signer is configured in **Facilities → Details → Resolution approvals**.
+
+If the grievance is already pending approval, the resolution is locked. The submitter can cancel the request, and a required signer or administrator can request changes with a note; either returns the Resolution to editing so it can be submitted again. Overdue status does not change these permissions.
 
 ## I cannot update a finalized Resolution
 
@@ -85,11 +92,19 @@ For an internal grievance, open the case, select **Intake record**, and use the 
 
 Public intake records are immutable. Add a case note that explains the correction and contact an administrator before creating a replacement record.
 
-## My team member cannot be assigned to a department
+## PointClickCare residents or context are missing
 
-Confirm the person has access to that facility.
+Confirm the selected facility is connected. Use **Resident not listed** if you need to continue intake manually. For a linked resident's missing or outdated care plans or assessments, open the resident record and select **Refresh**. A missing section is not confirmation that no clinical records exist.
 
-Members must have facility access before they can be assigned to a department at that facility. Admins have access to all facilities.
+See [PointClickCare troubleshooting](/integrations/pointclickcare#if-something-is-missing).
+
+## I am asked to set up two-step verification
+
+CareResolve requires a password and two-step verification on every account. Add an authenticator app or a phone number for text-message codes when prompted; the workspace opens as soon as setup is complete.
+
+## A meeting recording did not finish
+
+Transcription takes about 6 minutes for an hour of audio. If the recording shows that the upload did not finish or the file could not be transcribed, check that the file plays, remove the recording, and import it again.
 
 ## Assistant cannot answer about a grievance
 
@@ -99,4 +114,4 @@ Confirm the grievance is in a facility the user can access and that filters or w
 
 ## I need support
 
-Use the top bar help menu to contact support, give feedback, report a bug, or open these docs. You can also contact support at [support@careresolve.ai](mailto:support@careresolve.ai).
+Use the help menu at the bottom of the sidebar to contact support, give feedback, report a bug, or open these docs. You can also contact support at [support@careresolve.ai](mailto:support@careresolve.ai).

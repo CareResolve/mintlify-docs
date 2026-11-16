@@ -66,9 +66,10 @@
         ]
       },
       {
-        "group": "Meetings",
+        "group": "Resident Council",
         "pages": [
           "meetings/manage-meetings",
+          "meetings/import-a-recording",
           "meetings/link-resident-council-grievances"
         ]
       },
@@ -86,7 +87,8 @@
         "group": "Public Intake",
         "pages": [
           "public-intake/share-intake-links",
-          "public-intake/review-public-submissions"
+          "public-intake/review-public-submissions",
+          "public-intake/voice-intake"
         ]
       },
       {
@@ -95,6 +97,12 @@
           "insights/assistant",
           "insights/patterns",
           "insights/analytics"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "integrations/pointclickcare"
         ]
       },
       {
